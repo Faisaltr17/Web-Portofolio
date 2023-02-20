@@ -6,6 +6,7 @@
     <title>My Box Web</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../images/favicon.png">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg ">
@@ -34,22 +35,22 @@
     </nav>
 
     <section id="home" class="home container">
-        <div class="row d-flex align-items-center">
-            <div class="col-7">
+        <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+            <div class="col-12 col-md-8">
                 <h3 class="fw-semibold">Greetings! I am</h3>
                 <h1 class="fw-bold">Muhammad Faisal</h1>
                 <p>I am an Information System Student Freshgraduate based in Jakarta, Indonesia who loves to try something new.</p>
                 <p>I love and have been interested in the project, product, and web development since my 2nd year.</p>
                 <a class="btn button" href="#contact">Reach Me</a>
             </div>
-            <div class="col-5">
-                <img class="photo" src="../images/pp2.png" style="width: 75%;" alt="">
+            <div class="col-12 col-md-4">
+                <img class="photo" src="../images/pp2.png" style="width: 90%;" alt="">
             </div>
         </div>
-        <div class="arrow w-100 d-flex align-items-center flex-column mt-5">
-            <a href="#profile" class="text-decoration-none text-dark">More Info</a>
+        <a href="#profile" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5">
+            <div class=" text-dark">More Info</div>
             <img id="arrow" class="mt-2" src="../images/arrow.svg" alt="arrow-icon">
-        </div>
+        </a>
     </section>
     <section id="profile" class="profile container">
       <div class="profile-header">
@@ -105,9 +106,9 @@
       </div>
     </section>
     <section id="journey" class="journey container">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero laboriosam debitis inventore excepturi dolor corporis ducimus numquam, vitae temporibus autem nulla tenetur reprehenderit quasi soluta neque nemo? Ad unde voluptatem corrupti rerum officiis eius similique perspiciatis dolorem ex. Expedita ad libero ut aliquid voluptate rem deleniti hic doloribus quasi!</p>
+      <p>My experience and skills are mostly in product and project development, and since I am a computer science student the products and projects that I do will revolve around digital especially web and other digital products</p>
       <div class="journey-exp">
-        <h3 class="text-center mt-5">Work Experience</h3>
+        <h3 class="text-center mt-5">Work Experiences</h3>
           <div class="journey-exp-item">
               <div class="journey-exp-item-header">
                   <div>
@@ -142,7 +143,7 @@
           </div>
       </div>
       <div class="journey-exp">
-        <h3 class="text-center mt-5">Organization/Volunteer Experience</h3>
+        <h3 class="text-center mt-5">Organization/Volunteer Experiences</h3>
           <div class="journey-exp-item">
               <div class="journey-exp-item-header">
                   <div>
@@ -179,7 +180,7 @@
                 - Successfully handle 2 E-Sport Competition
                 - Organizing the stand-up comedy program</p>
           </div>
-          <div class="journey-exp-item">
+          <div class="journey-exp-item" style="display: none;">
             <div class="journey-exp-item-header">
                 <div>
                     <h5>Head Division of Business IT Case Competition</h5>
@@ -190,9 +191,9 @@
             <p class="journey-exp-item-detail">- Create a competition concept
               - Lead every staff meeting
               - Responsible for the smooth running of the entire competition</p>
-        </div>
-        <div class="journey-exp-item">
-          <div class="journey-exp-item-header">
+          </div>
+          <div class="journey-exp-item" style="display: none;">
+            <div class="journey-exp-item-header">
               <div>
                   <h5>Staff of Field Responsible Division Weeks Of Welcoming Sistem Informasi 2020</h5>
                   <p>Eksekutif Mahasiswa Sistem Informasi · Volunteer (May 2020 - Mar 2021 · 11 mos)</p>
@@ -202,9 +203,9 @@
           <p class="journey-exp-item-detail">- Became a zoom operator and one of the breakout rooms in a series of events
             - Responsible for event recording
             - Standby in each series of events to arrange the technical matters of the event</p>
-        </div>
-        <div class="journey-exp-item">
-          <div class="journey-exp-item-header">
+          </div>
+          <div class="journey-exp-item" style="display: none;">
+            <div class="journey-exp-item-header">
               <div>
                   <h5>Staff of OSIS SMA Negeri 3 Depok</h5>
                   <p>SMA Negeri 3 Depok · Organization (Dec 2017 - Oct 2018 · 11 mos)</p>
@@ -212,8 +213,8 @@
               <button class="btn button" onclick="toggleDetail(event)">More Detail</button>
           </div>
           <p class="journey-exp-item-detail">-</p>
-        </div>
-        <div class="journey-exp-item">
+          </div>
+          <div class="journey-exp-item" style="display: none;">
           <div class="journey-exp-item-header">
               <div>
                   <h5>Head of Event Division 28 SIDES</h5>
@@ -222,9 +223,36 @@
               <button class="btn button" onclick="toggleDetail(event)">More Detail</button>
           </div>
           <p class="journey-exp-item-detail">-</p>
+          </div>
+        <button class="btn button showMore" onclick="showMore(event)">More Experience</button>
+      </div>
+    </section>
+    <section id="contact" class="contact container">
+      <div class="icons row" style="text-align: center;">
+        <div class="icon align-items-center">
+          <a href="https://www.linkedin.com/in/muhammad-faisal-a892851a7/" target="_blank">
+            <img class="w-25" src="images/linkedin.png"  alt="Linkedin icon">
+          </a>
+        </div>
+        <div class="icon align-items-center">
+          <a href="https://www.instagram.com/faisalsmhmmd/" target="_blank">
+            <img class="w-25" src="images/ig.png" alt="instagram icon">
+          </a>
+        </div>
+        <div class="icon align-items-center">
+          <a href="mailto:muhammadfaisaltr3@gmail.com" target="_blank">
+            <img class="w-25" src="images/gmail.png" alt="email icon">
+          </a>
+        </div>
+        <div class="icon align-items-center">
+          <a href="https://github.com/Faisaltr17" target="_blank">
+            <img class="w-25" src="images/github.png" alt="github icon">
+          </a>
         </div>
       </div>
-  </section>
+      <p style="width: 100%;font-size: 20px; text-align:center;margin-top:1em;padding-bottom :1em;color: black;">&copy; 2021. Made with <b>&#x2764; </b> by Muhammad Faisal</p>
+      
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>

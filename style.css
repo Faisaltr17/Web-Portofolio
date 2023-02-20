@@ -35,6 +35,9 @@ section::before{
 #home h3{
     font-size: 64px;
 }
+#home .img{
+    width: 100%;
+}
 #home .arrow img{
     width: 60px;
 }
@@ -112,4 +115,13 @@ section::before{
 }
 .journey-exp-item-detail{
     display: none;
+}
+
+/* contact */
+.icons{
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    width: 10%;
 }
